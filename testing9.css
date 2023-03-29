@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 100% !important;
+}
+
+#titleHeader,
+.titleHeader {
+  display: none;
+}
+
+#paymentSummary,
+.paymentSummary {
+  display: none;
+}
+
+.cardBody {
+  margin-bottom: 20px;
+}
+
+/* .cardBody .creditCardIcons {
+  height: 26px;
+  margin: 0;
+  margin-right: 10px;
+} */
+
+
+.inputContainer,
+.holder.cardCvCHolder {
+  background: none;
+  border: 0;
+  padding: 0;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.inputContainer.active,
+.inputContainer.activesimulate {
+  border: 0;
+}
