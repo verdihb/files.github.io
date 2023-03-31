@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 100% !important;
+  overflow-y: visible !important;
+  overflow-x: hidden;
+}
+
+
+#titleHeader,
+.titleHeader {
+  display: none;
+}
+
+#addCardForm {
+  margin: 0;
+  overflow: auto !important;
+}
+
+#walletSelection {
+  border: 0;
+  background: none;
+}
+
+#paymentSummary,
+.paymentSummary {
+  display: none;
+}
+
+.instrument .content,
+.instrument .contentSimplified {
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.instrumentPopupContent,
+.instrument:not(.saved) .content {
+  margin: 0;
+  padding: 20px;
+  background: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.instrument.active:not(.saved) {
+  background: none;
+}
+
+.walletHeader {
+  display: none;
+}
+
+.cardLogoHolder {
+  margin-bottom: 20px;
+}
+
+.cardLogoHolder .cardLogo {
+  height: 26px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.instrumentPopupHeader {
+  background: none;
+  border: 0;
+  padding: 20px 20px 0;
+}
+
+.instrumentInfoHolder .expDate,
+.instrumentInfoHolder .giftCardBalance {
+  display: none;
+}
+
+.instrumentInfoHolder .instrumentLogoHolder {
+  margin-bottom: 10px;
+}
+
+.instrumentInfoHolder .instrumentLogoHolder img {
+  height: 26px;
+}
+
+.cardBody {
+  margin-bottom: 20px;
+}
+
+.cardBody .creditCardIcons {
+  height: 26px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.holder.cardNumberHolder {
+  margin-bottom: 25px;
+}
+
+.inputContainer,
+.holder.cardCvCHolder {
+  background: none;
+  border: 0;
+  padding: 0;
+  height: auto;
+  margin-top: 20px;
+}
+
+.inputContainer.active,
+.inputContainer.activesimulate {
+  border: 0;
+}
+
+.inputContainer .labelContainer {
+  position: initial;
+  margin: 0 0 8px !important;
+}
+
+.inputContainer.valid::after {
+  right: 10px;
+  top: 37px;
+}
+
+.inputContainer.error::after,
+.inputContainer.error::before {
+  right: 10px;
+  top: 40px;
+}
+
+.inputContainer label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+}
+
+.inputContainer label.placeHolderLabel {
+  display: none;
+}
+
+.inputContainer input,
+.inputContainer.filled input,
+.instrumentInfoHolder .instrumentNumber {
+  display: block;
+  border: 0.5px solid #b7afa2;
+  border-radius: 0;
+  padding: 10px;
+  height: 40px;
+  line-height: 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #231f20;
+}
+
+.recaptchaContainer {
+  margin-top: 4px;
+}
+
+.cardCvCHolder .cvcInfoLink {
+  display: none;
+}
